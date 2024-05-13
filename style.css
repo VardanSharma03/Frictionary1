@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+.nosifer {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 80px;
+}
+
+* {
+    font-family: system-ui;
+    font-weight: 200;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url("http://getwallpapers.com/wallpaper/full/c/5/1/1019935-haunted-house-wallpaper-2000x1333-for-phone.jpg");
+    background-size: cover;
+}
+
+.rain {
+    height: 100vh;
+    background-image: url(rain.png);
+    animation: rain 0.8s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 20% 100%;
+    }
+}
+
+.rain::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(lightining.png);
+    top: -100px;
+    transform: rotate(180deg);
+    animation: lightining 4s linear infinite;
+    opacity: 1;
+}
+
+@keyframes lightining {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    21% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    31% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.nab {
+    display: flex;
+    justify-content: space-between;
+    color: aliceblue;
+    margin: 20px;
+}
+
+.img1 {
+    position: relative;
+    top: 1px;
+    filter: invert(1);
+    width: 15px;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.btn span {
+    padding: 3px;
+}
+
+.ai {
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Arvo", serif;
+    display: flex;
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    transition: 0.5s;
+    letter-spacing: 0.1rem;
+    border-radius: 20px;
+    border: 2px solid rgb(110, 5, 5);
+    padding: 10px;
+    height: 22px;
+}
+
+.ai:hover {
+    letter-spacing: 0.25em;
+    background: var(--clr);
+    box-shadow: 0 0 35px rgb(203, 81, 81);
+}
+
+.list {
+    position: relative;
+    left: -13%;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 25px;
+}
+
+.nab h2 {
+    position: relative;
+    font-size: 45px;
+    color: rgb(149, 14, 14);
+    transition: 1.5s;
+    font-weight: 500;
+    font-family: "Arvo", serif;
+    z-index: 2;
+}
+
+.heading {
+    height: 45vh;
+    display: flex;
+    font-size: 120px;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+}
+
+.hi {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex-direction: row-reverse;
+}
+
+.hi li {
+    list-style: none;
+    color: #980202;
+    font-weight: bold;
+    font-family: "Arvo", serif;
+    letter-spacing: 10px;
+    filter: blur(2px);
+    transition: 2.5s;
+    font-size: 120px;
+}
+
+.hi li:hover,
+.hi li:hover~li {
+    transform: rotate(180deg)translateX(-200px);
+    transition: 2s;
+    filter: blur(320px);
+    opacity: 0;
+}
+
+.list li {
+    color: rgb(149, 14, 14);
+    font-weight: 400;
+}
+
+.nab h2:hover {
+    color: rgb(78, 5, 5);
+    transform: scale(2);
+    filter: blur(120px);
+    box-shadow: 0 0 535px rgb(80, 3, 3);
+}
+
+.img {
+    position: relative;
+    left: -26%;
+    opacity: 0;
+    z-index: 1;
+    transition-duration: 1.3s;
+}
+
+.nab li:hover {
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(125, 5, 5);
+    font-size: 16px;
+}
+
+.nab li {
+    border-radius: 30px;
+    width: 90px;
+    transition-duration: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 38px;
+    justify-items: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    height: 30%;
+}
+.footer img{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 35px;
+    filter: invert();
+    transition-duration: 0.2s;
+}
+.footer img:hover{
+    color: rgb(255, 83, 83);
+    transform: scale(1.2);
+}

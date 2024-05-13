@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Nosifer&display=swap"
+        rel="stylesheet">
+    <style>
+        .button-container {
+            position: relative;
+            text-align: center;
+        }
+
+        .button {
+            padding: 18px 50px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #b80000;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #13293d;
+            color: #b80000;
+            border-color: #b80000;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 80%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="scarySound">
+        <source src="evil-shreik-45560.mp3" type="audio/mp3">
+    </audio>
+    <div class="rain">
+        <div class="nab">
+            <audio src="natural-thunder-113219.mp3" autoplay loop></audio>
+            <h2 class="h" onmouseover="playSound()">Fictionary</h2><img class="img"
+                style=" width: 120px; height: 80px; filter: blur(1px);" src="creepy-ghost_12394.png">
+            <ul class="text list">
+                <a>
+                    <li class="l1">Play</li>
+                </a>
+                <a class="a2">
+                    <li class="l2">Rules</li>
+                </a>
+                <a class="a3">
+                    <li class="l3">Top List</li>
+                </a>
+            </ul>
+            <a class="ai" style="--clr:rgb(149, 14, 14);" href="#">
+                <div class="btn animated-button"><span><img class="img1" src="icons8-google.svg"></span><span
+                        class="text">SIGN IN</span></div>
+            </a>
+        </div>
+        <div class="heading">
+            <ul class="hi nosifer">
+
+                <li class="Nosifer">Y</li>
+                <li class="nosifer">R</li>
+                <li class="nosifer">A</li>
+                <li class="nosifer">N</li>
+                <li class="nosifer">O</li>
+                <li class="nosifer">I</li>
+                <li class="nosifer">T</li>
+                <li class="nosifer">C</li>
+                <li class="nosifer">I</li>
+                <li class="Nosifer">F</li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="button-container">
+                <button class="button" onclick="showPopup()">SIGN IN</button>
+            </div>
+
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <h2>Are you sure you want to proceed?</h2>
+                    <p>Remember, some things are best left unknown...</p>
+                    <button style="margin: 25px; width: 50px; height: 25px;" onclick="hidePopup()">Close</button><button
+                        style="margin: 25px; width: 50px; height: 25px" onclick="hidePopup()">Take
+                        Risk</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer"><a target="_blank" href="https://www.youtube.com/channel/UCx7ixKEIib3ikQd_QBEY9Qw"><img src="icons8-youtube.svg"></a><a target="_blank" href="https://m.facebook.com/debatingsociety3103.nitd/"><img src="icons8-facebook.svg"></a><a target="_blank" href="https://www.debsocnitdgp.in/"><img style="width: 30px; height: 32px;" src="DEBSOClogo.png"></a><a
+            target="_blank" href="https://www.instagram.com/debsocnitd/"><img src="icons8-insta.svg"></a><a target="_blank" href="https://in.linkedin.com/company/debating-society-nit-durgapur"><img src="icons8-linkedin.svg"></a></div>
+    </div>
+    <div class="lightining"></div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
